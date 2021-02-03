@@ -19,13 +19,13 @@
   const nav = document.querySelector(".nav-container");
   const blob = document.querySelector(".nav-container svg");
 
-  gsap.set(blob, { xPercent: -50, x: innerWidth / 2 });
+  gsap.set(blob, { xPercent: -50, x: innerWidth / 1.94 });
   nav.addEventListener("mousemove", (el) => {
     gsap.to(blob, { duration: 0.2, x: el.clientX, overwrite: "auto" });
   });
 
   nav.addEventListener("mouseleave", (el) => {
-    gsap.to(blob, { duration: 0.1, x: innerWidth / 2, overwrite: "auto" });
+    gsap.to(blob, { duration: 0.1, x: innerWidth / 1.94, overwrite: "auto" });
   });
 </script>
 
