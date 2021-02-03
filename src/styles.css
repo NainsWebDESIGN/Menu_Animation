@@ -11,6 +11,7 @@ nav {
   justify-content: space-around;
   background: linear-gradient(to bottom, #674ca6, #1d4ca2);
   height: 113px;
+  box-shadow: 0 0 4px 1px #555;
 }
 nav a {
   color: #000;
