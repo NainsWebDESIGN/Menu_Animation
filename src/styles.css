@@ -9,8 +9,8 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-  background: #fff;
-  height: 126px;
+  background: linear-gradient(to bottom, #6666ff, #2848d6);
+  height: 113px;
 }
 nav a {
   color: #000;
@@ -35,5 +35,5 @@ nav a {
   height: 20px;
 }
 .nav-container path {
-  fill: #fff;
+  fill: #2848d6;
 }
