@@ -1,14 +1,32 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>EmailInput</title>
+  <title>Menu Animation</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.bootcdn.net/ajax/libs/gsap/3.2.3/gsap.min.js"></script>
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+<script>
+  console.clear();
+  const nav = document.querySelector(".nav-container");
+  const blob = document.querySelector(".nav-container svg");
+
+  gsap.set(blob, { xPercent: -50, x: innerWidth / 2 });
+  nav.addEventListener("mousemove", (el) => {
+    gsap.to(blob, { duration: 0.2, x: el.clientX, overwrite: "auto" });
+  });
+
+  nav.addEventListener("mouseleave", (el) => {
+    gsap.to(blob, { duration: 0.1, x: innerWidth / 2, overwrite: "auto" });
+  });
+</script>
+
 </html>

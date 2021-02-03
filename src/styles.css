@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url(./assets/image/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: #e28c45; */
+  overflow: hidden;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  height: 126px;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  line-height: 70px;
+  font-family: sans-serif;
+}
+.logo img {
+  width: 86px;
+  height: 86px;
+}
+.nav-container {
+  position: relative;
+}
+.nav-container svg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 20px;
+}
+.nav-container path {
+  fill: #fff;
+}
